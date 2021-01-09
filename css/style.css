@@ -8,6 +8,33 @@ header, footer, section{
     width: 100%;
     height: 100vh;
     border: 1px solid green;
+    background: linear-gradient(270deg, #28302e, #1f5446);
+    background-size: 600% 600%;
+    -webkit-animation: bgAnimate 10s ease infinite;
+    -moz-animation: bgAnimate 10s ease infinite;
+    -o-animation: bgAnimate 10s ease infinite;
+    animation: bgAnimate 10s ease infinite;
+}
+
+@-webkit-keyframes bgAnimate {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes bgAnimate {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes bgAnimate {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes bgAnimate {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 
 .skills{
@@ -19,6 +46,6 @@ header, footer, section{
     min-width: 100%;
     overflow-x: hidden;
     height: 100vh;
-    background: yellow;
     border: 5px solid red;
 }
+
