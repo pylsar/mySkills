@@ -109,8 +109,8 @@ header, footer, section{
     align-items: center;
   }
   .certificate{
-    width: 600px;
-    height: 600px;
+    width: 80vw;
+    height: 80vh;
     border: 1px solid red;
     position: relative;
   }
@@ -179,8 +179,8 @@ header, footer, section{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 600px;
-    height: 600px;
+    width: 80vw;
+    height: 80vh;
   }
   .certificate__img img{
     width: 100%;
