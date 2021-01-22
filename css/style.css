@@ -7,7 +7,6 @@
 header, footer, section{
     width: 100%;
     height: 100vh;
-    border: 1px solid green;
     background: linear-gradient(270deg, #28302e, #1f5446);
     background-size: 600% 600%;
     -webkit-animation: bgAnimate 10s ease infinite;
@@ -83,7 +82,6 @@ header, footer, section{
     min-width: 100%;
     overflow-x: hidden;
     height: 100vh;
-    border: 5px solid red;
     position: relative;
 }
 .skill__name{
@@ -111,7 +109,6 @@ header, footer, section{
   .certificate{
     width: 80vw;
     height: 80vh;
-    border: 1px solid red;
     position: relative;
   }
   .certificate:hover .certificate__items{
@@ -131,7 +128,6 @@ header, footer, section{
     left: 0;
     bottom: 0;
     right: 0;
-    border: 1px solid blue;
     transition: transform 1s ease;
   }
   .certificate__buttons{
@@ -146,7 +142,6 @@ header, footer, section{
     width: 5%;
     padding-top: 6px;
     padding-bottom: 6px;
-    border: 1px solid green;
     opacity: 0;
     transition: opacity .5s ease;
   }
@@ -174,6 +169,10 @@ header, footer, section{
     right: 0;
     bottom: 0;
     display: none;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 1),
+                -23px 0 20px -23px rgba(0, 0, 0, .8),
+                23px 0 20px -23px rgba(0, 0, 0, .8),
+                0 0 40px rgba(0, 0, 0, .1) inset;
   }
   .certificate__img{
     display: flex;
@@ -183,8 +182,8 @@ header, footer, section{
     height: 80vh;
   }
   .certificate__img img{
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
   }
   .certificate__cover{
     position: absolute;
@@ -194,6 +193,10 @@ header, footer, section{
     bottom: 0;
     padding: 24px;
     background: gray;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 1),
+                -23px 0 20px -23px rgba(0, 0, 0, .8),
+                23px 0 20px -23px rgba(0, 0, 0, .8),
+                0 0 40px rgba(0, 0, 0, .1) inset;
   }
   .certificate__footer{
     width: 100%;
@@ -201,7 +204,6 @@ header, footer, section{
     position: absolute;
     left: 0;
     bottom: 0;
-    border: 1px solid red;
     z-index: 1;
     display: flex;
     justify-content: center;
@@ -212,7 +214,8 @@ header, footer, section{
   .showContent{
     display: block;
     z-index: 10;
-    background: blue;
+    /* background: blue; */
+    background: linear-gradient(270deg, #1d5f4e, #1f5446);
   }
   .activeTab{
     background: skyblue;
