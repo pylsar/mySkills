@@ -9,7 +9,8 @@ tlOverlay
 let tlTitle = new TimelineMax();
 tlTitle
 .staggerFromTo('.header__profession', 2, {y: -400, opacity: 0}, {y: 0, opacity: 1}, 0.05)
-.staggerFromTo('.header__title', 1, {opacity: 0}, {opacity: 1}, 0.05)
+// .staggerFromTo('.header__title', 1, {opacity: 0}, {opacity: 1}, 0.05)
+.staggerFromTo('.header__title h1 span', 1, {y: 50, opacity: 0}, {y: 0, opacity: 1}, 0.05)
 .staggerFromTo('.header__quote', 1, {opacity: 0}, {opacity: 1}, 0.05)
 .staggerFromTo('.nav-btn', 1, {opacity: 0}, {opacity: 1}, 0.05)
 
