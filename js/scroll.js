@@ -17,4 +17,23 @@ $( document ).ready(function() {
       .setTween(horizontalSlide)
     //   .addIndicators() 
       .addTo(controller);
+
+
+    // анимация стрелок в разделе skills по скролу
+    let skillSceneList = new ScrollMagic.Scene({
+      triggerElement: '.skill__arrow',
+    })
+      .setClassToggle('.skill__arrow', 'skill__arrow--in')
+      // .addIndicators()
+      .addTo(controller);
+
+      
+    // анимация картинки в разделе skills по скролу
+    let skillSceneImg = new ScrollMagic.Scene({
+      triggerElement: '.skill__img',
+    })
+      .setClassToggle('.skill__img', 'skill__img--in')
+      // .addIndicators()
+      .addTo(controller);  
+
   });
