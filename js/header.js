@@ -11,5 +11,15 @@ tlTitle
 .staggerFromTo('.header__profession', 2, {y: -400, opacity: 0}, {y: 0, opacity: 1}, 0.05)
 .staggerFromTo('.header__title', 1, {opacity: 0}, {opacity: 1}, 0.05)
 .staggerFromTo('.header__quote', 1, {opacity: 0}, {opacity: 1}, 0.05)
+.staggerFromTo('.nav-btn', 1, {opacity: 0}, {opacity: 1}, 0.05)
 
 
+//НАВИГАЦИЯ
+$('.nav-btn').on('click', function(){
+    $('.nav').toggleClass('nav-in');
+})
+
+$('.nav__list li a').on('click', function(){
+    //убираем меню при клике на ссылку
+    $('.nav').removeClass('nav-in');
+})
