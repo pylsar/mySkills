@@ -3,6 +3,24 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  font-family: 'Caveat', cursive;
+}
+@font-face {
+  font-family: "Caveat";
+  src: url("fonts/Caveat-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  }
+
+@font-face {
+  font-family: "Caveat";
+  src: url("fonts/Caveat-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  }
 
 header, footer, section{
   width: 100%;
@@ -90,8 +108,8 @@ header, footer, section{
 
 .nav-btn{
   position: fixed;
-  top: 3%;
-  left: 3%;
+  top: 2%;
+  left: 2%;
   background: none;
   outline: none;
   border: none;
@@ -121,7 +139,6 @@ header, footer, section{
   transform: translateY(-50%);
   opacity: 1;
   transition: all .2s ease-in;
-
 }
 .nav-btn span:last-child{
   position: absolute;
@@ -148,24 +165,22 @@ header, footer, section{
   transition: all .2s ease-in;
 }
 
-
-
 /*end_button*/
+
 .nav{
-  background: green;
-  display: none;
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); 
+  transform: translateY(-100vh);
+  transition: transform .3s ease-in;
   position: fixed;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
   z-index: 10;
-  /* transform: translateY(-100vh);
-  transition: transform 5s ease-in; */
 }
 .nav-in{
-  display: block;
-  /* transform: translateY(0); */
+  transform: translateY(0);
+  transition: transform .3s ease-in;
 }
 .nav__list{
   width: 100%;
@@ -184,7 +199,7 @@ header, footer, section{
 }
 .nav__list li a {
   font-size: 30px;
-  color: #000;
+  color: #fff;
   text-decoration: none;
   text-transform: capitalize;
 }
@@ -220,15 +235,17 @@ header, footer, section{
   justify-content: space-between;
   padding-top: 48px;
 }
+
 .skill__list{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
+
 .skill__list li {
   font-size: 34px;
-  padding: 24px;
+  padding: 24px 24px 24px 96px;
 }
 
 .skill__img{
@@ -352,11 +369,18 @@ header, footer, section{
   right: 0;
   bottom: 0;
   padding: 24px;
-  background: gray;
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); 
   box-shadow: 0 1px 4px rgba(0, 0, 0, 1),
               -23px 0 20px -23px rgba(0, 0, 0, .8),
               23px 0 20px -23px rgba(0, 0, 0, .8),
               0 0 40px rgba(0, 0, 0, .1) inset;
+  display: flex;
+  justify-content: center;
+  align-items: center;            
+}
+.certificate__title{
+  color: #fff;
+  font-size: 50px;
 }
 .certificate__footer{
   width: 100%;
@@ -373,7 +397,7 @@ header, footer, section{
   
 .showContent{
   display: block;
-  z-index: 10;
+  z-index: 9;
   background: linear-gradient(270deg, #1d5f4e, #1f5446);
 }
 .activeTab{
