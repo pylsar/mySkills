@@ -17,9 +17,11 @@ tlTitle
 //НАВИГАЦИЯ
 $('.nav-btn').on('click', function(){
     $('.nav').toggleClass('nav-in');
+    $(this).toggleClass('nav-btn__close');
 })
 
 $('.nav__list li a').on('click', function(){
     //убираем меню при клике на ссылку
     $('.nav').removeClass('nav-in');
+    $('.nav-btn').removeClass('nav-btn__close');
 })
