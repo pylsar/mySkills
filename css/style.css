@@ -425,24 +425,34 @@ header, footer, section{
               0 0 40px rgba(0, 0, 0, .1) inset;
   background: linear-gradient(to left, #2C5364, #203A43, #0F2027);            
 }
+.activeTab{
+  background: skyblue;
+}
+
 /*end tabs*/
 /*cards*/
 .cards{
-  border: 1px solid red;
   flex: 1;
 }
 .card__subtitle{
-  display: block;
+  /* display: block; */
   font-size: 24px;
   color: #fff;
   margin-top: 24px;
   margin-bottom: 24px;
   text-align: center;
+  display: none;
+}
+/* .card__subtitle:first-child{
+  display: block;
+} */
+.cardSubtitleIsActive{
+  display: block;
 }
 .cards__item{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
