@@ -456,6 +456,8 @@ header, footer, section{
   justify-content: center;
   align-items: center;
   position: relative;
+  cursor: pointer;
+  overflow: hidden;
 }
 
 .card img {
@@ -470,10 +472,60 @@ header, footer, section{
   right: 0;
   z-index: 5;
   background: linear-gradient(to left, #2C5364, #203A43, #0F2027);
-  text-align: center;
+  color: #fff;
+  display:flex;
+  justify-content: space-between;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.card__code{
+  text-decoration: none;
   color: #fff;
 }
+.card__code:hover{
+  text-decoration: underline;
+}
 
+.card__overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 20px;
+  right: 0;
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  transform: translateY(100%);
+  transition: all .3s ease-in;
+}
+
+.card__overlay ul {
+  list-style-type: none;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+  padding: 12px;
+  color: #fff;
+}
+.card__link{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 20px;
+  right: 0;
+  z-index: 6;
+}
+.card:hover{
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 1),
+              -23px 0 20px -23px rgba(0, 0, 0, .8),
+              23px 0 20px -23px rgba(0, 0, 0, .8),
+              0 0 40px rgba(0, 0, 0, .1) inset;
+}
+.card:hover .card__overlay{
+  transform: translateY(0);
+  transition: all .3s ease-in;
+}
+.card:hover .card__overlay ul {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
 
 
 
