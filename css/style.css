@@ -472,7 +472,7 @@ header, section{
   height: 180px;
   border: 1px solid blue;
   margin-left: 12px;
-  margin-bottom: 12px;
+  margin-bottom: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
