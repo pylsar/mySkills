@@ -290,13 +290,13 @@ header, section{
 }
 .certificate:hover .certificate__items{
   transform: translate(-5%, -5%);
-  transition: transform 1s ease;
+  transition: transform .3s ease;
 }
 .certificate:hover .certificate__buttons,
 .certificate:hover .certificate__footer{
   opacity: 1;
-  transition: opacity .5s ease;
-  transition-delay: .8s;
+  transition: opacity .3s ease;
+  transition-delay: .5s;
 }
 .certificate__items{
   position: absolute;
@@ -304,7 +304,7 @@ header, section{
   left: 0;
   bottom: 0;
   right: 0;
-  transition: transform 1s ease;
+  transition: transform .3s ease;
 }
 .certificate__buttons{
   display: flex;
@@ -319,7 +319,7 @@ header, section{
   padding-top: 6px;
   padding-bottom: 6px;
   opacity: 0;
-  transition: opacity .5s ease;
+  transition: opacity .3s ease;
 }
 .certificate__buttons .toggleBtn{
   content: '';
