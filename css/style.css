@@ -7,7 +7,7 @@ body{
   font-family: 'Caveat', cursive;
 }
 
-header, footer, section{
+header, section{
   width: 100%;
   height: 100vh;
   background: linear-gradient(270deg, #28302e, #1f5446);
@@ -79,7 +79,7 @@ header, footer, section{
   height: 33.3vh;
   background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
   position: relative;
-  z-index: 1;
+  z-index: 100;
 }
 
 
@@ -419,14 +419,15 @@ header, footer, section{
   margin-left: 0;
 }
 .tab:hover{
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 1),
-              -23px 0 20px -23px rgba(0, 0, 0, .8),
-              23px 0 20px -23px rgba(0, 0, 0, .8),
-              0 0 40px rgba(0, 0, 0, .1) inset;
   background: linear-gradient(to left, #2C5364, #203A43, #0F2027);            
 }
 .activeTab{
-  background: skyblue;
+  /* background: skyblue; */
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 1),
+              -23px 0 20px -23px rgba(0, 0, 0, .8),
+              23px 0 20px -23px rgba(0, 0, 0, .8),
+              0 0 40px rgba(0, 0, 0, .1) inset;
+  transform: scale(1.1);            
 }
 
 /*end tabs*/
@@ -435,7 +436,6 @@ header, footer, section{
   flex: 1;
 }
 .card__subtitle{
-  /* display: block; */
   font-size: 24px;
   color: #fff;
   margin-top: 24px;
@@ -443,9 +443,6 @@ header, footer, section{
   text-align: center;
   display: none;
 }
-/* .card__subtitle:first-child{
-  display: block;
-} */
 .cardSubtitleIsActive{
   display: block;
 }
@@ -538,12 +535,52 @@ header, footer, section{
 }
 
 
-
-
-
 /*end cards*/
 
 
+/**************END_PORTFOLIO*********/ 
 
+/**************FOOTER****************/ 
 
-/**************END_PORTFOLIO*********/  
+.footer{
+  width: 100%;
+  background: linear-gradient(270deg, #28302e, #1f5446);
+  background-size: 100% 100%;
+  -webkit-animation: bgAnimate 10s ease infinite;
+  -moz-animation: bgAnimate 10s ease infinite;
+  -o-animation: bgAnimate 10s ease infinite;
+  animation: bgAnimate 10s ease infinite;
+}
+.footer__text{
+  text-align: center;
+  font-size: 34px;
+  padding-top: 100px;
+}
+.footer__link{
+  text-decoration: underline;
+  color: #000;
+}
+.footer__link:hover{
+  text-decoration: none;
+}
+.footer__list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.footer__social{
+  width: 100px;
+  height: 100px;
+  margin-left: 24px;
+  margin-right: 24px;
+  transition: transform .3s ease-in;
+}
+.footer__social:hover{
+  transform: rotate(360deg);
+  transition: transform .3s ease-in;
+}
+
+/**************END_FOOTER****************/ 
