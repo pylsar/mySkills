@@ -244,12 +244,13 @@ header, section{
 
 .skill__list li {
   font-size: 34px;
-  padding: 24px 24px 24px 96px;
+  /* padding: 24px 24px 24px 96px; */
+  padding: 6px 12px 6px 96px;
 }
 
 .skill__img{
-  width: 40%;
-  height: 40%;
+  width: 30%;
+  height: 30%;
   transform: translateY(100px);
   transition: transform 1s ease-in;
 }
