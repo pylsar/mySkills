@@ -251,7 +251,7 @@ header, section{
 .skill__img{
   width: 30%;
   height: 30%;
-  transform: translateY(100px);
+  transform: translateY(30px);
   transition: transform 1s ease-in;
 }
 .skill__img img{
