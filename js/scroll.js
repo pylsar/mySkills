@@ -36,4 +36,12 @@ $( document ).ready(function() {
       // .addIndicators()
       .addTo(controller);  
 
+      // анимация иконок футера по скролу
+    let social = new ScrollMagic.Scene({
+      triggerElement: '.card ',
+    })
+      .setClassToggle('.footer__list', 'footer__list--in')
+      // .addIndicators()
+      .addTo(controller); 
+
   });

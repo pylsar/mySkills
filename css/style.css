@@ -585,6 +585,14 @@ header, section{
   list-style: none;
   padding-top: 50px;
   padding-bottom: 100px;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 1s ease-in;
+}
+.footer__list--in{
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 1s ease-in;
 }
 .footer__social{
   width: 100px;
