@@ -5,6 +5,7 @@
 }
 body{
   font-family: 'Caveat', cursive;
+  overflow-x: hidden;
 }
 
 header, section{
@@ -49,7 +50,7 @@ header, section{
 
 /**************HEADER*****************/
 .header{
-    overflow: hidden;
+    max-width: 100%;
 }
 .header__content{
   display: flex;
