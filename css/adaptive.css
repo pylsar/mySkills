@@ -1,0 +1,117 @@
+
+@media screen and (max-width: 1068px) {
+    .header__title{
+        font-size: 70px;
+    }
+    .header__quote{
+        font-size: 40px;
+    }
+    .header__profession{
+        font-size: 30px;
+    }
+    
+    .card{
+        width: calc( 33% - 24px);
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .nav__link{
+        font-size: 30px;
+    }
+
+    .section-title{
+        text-align: left;
+        padding-left: 96px;
+    }
+
+    .tabs{
+        width: 80%;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .tab{
+        margin-top: 12px;
+    }
+    .tab:first-child{
+        margin-left: 24px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .header__title{
+        font-size: 50px;
+    }
+    .certificate__footer{
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .nav__list{
+        flex-direction: column;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .skill .section-title{
+        display: none;
+    }
+    .skill__list{
+        padding-top: 120px;
+        width: 100%;
+    }
+    .skill__name{
+        right: 50%;
+        transform: translateX(50%);
+    }
+    .skill__img{
+        display: none;
+    }
+
+    .card{
+        width: calc( 50% - 24px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header__title{
+        font-size: 50px;
+    }
+    .header__quote{
+        font-size: 30px;
+        padding-top: 50px;
+    }
+    .header__profession{
+        font-size: 24px;
+        padding-bottom: 50px;
+    }
+    .skill__list li{
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 24px;
+    }
+    .skill__name{
+        font-size: 80px;
+    }
+    .certificate__title{
+        font-size: 34px;
+    }
+    .certificate__buttons{
+        padding-left: 12px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .card{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .certificate__footer{
+        font-size: 16px;
+    }
+}
