@@ -1,0 +1,690 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    font-family: Lato, Arial, san-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+a {
+    text-decoration: none;
+    color: #006DFE;
+}
+a:hover {
+    opacity: .7;
+}
+.container {
+    max-width: 1262px;
+    margin: 0 auto;
+}
+
+.container-small {
+    max-width: 1082px;
+    margin: 0 auto;
+}
+
+
+section:not(:first-child){
+    transform: translateY(-224px);
+}
+/*HEADER*/
+
+.header{
+    width: 100%;
+    min-height: 962px;
+    background-image: url('img/header.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 82px;
+    font-size: 18px;
+}
+
+nav ul li a {
+    color: #fff;
+}
+
+.header__description {
+    margin-top: 180px;
+    max-width: 620px;
+    color: #fff;
+}
+
+.header__description h1 {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+.header__description--text{
+    margin: 20px 0px 0px 0px;
+}
+
+.header__search {
+    display: flex;
+    color: #fff;
+    margin-top: 60px;
+    font-weight: 500;
+}
+
+.header__search--input{
+    border-bottom: 1px solid #fff;
+    margin-right: 70px;
+    display: flex;
+    align-items: center;
+}
+.header__search--input label {
+    padding-left: 25px;
+    padding-right: 38px;
+    font-size: 18px;
+}
+
+.header__search--link{
+    color: #fff;
+    font-size: 24px;
+    padding: 15px 40px; 
+    background: #1B7DFF; 
+}
+/*/HEADER*/
+
+/*BENEFITS*/
+.benefits {
+    margin-bottom: 130px;
+}
+
+.benefits .container {
+    transform: translateY(-224px);
+    background: #fff;
+}
+
+.benefits--title{
+    font-size: 35px;
+    font-weight: 500px;
+    padding: 93px 0px 120px 0px;
+}
+
+.benefits__cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefits__card {
+    width: 317px;
+    height: 288px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.benefits__card__img{
+    width: 66px;
+    height: 66px;
+}
+
+.benefits__card__img img {
+    width: 100%;
+}
+
+.benefits__card--title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/*/BENEFITS*/
+/*INSPIRE*/
+.inspire{
+    margin-bottom: 130px;
+}
+
+.inspire__head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inspire__head--link{
+    display: flex;
+    align-items: center;
+}
+
+.inspire__head--link-errow{
+    margin-left: 26px;
+}
+
+.inspire__head--title{
+    font-size: 35px;
+    font-weight: 500;
+}
+.inspire__head--title:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 253px;
+    background: #006DFE;
+}
+
+.inspire__top, .inspire__bottom{
+    display: flex;
+}
+.inspire__top{
+    margin-top: 45px;
+    margin-bottom: 10px;
+}
+
+.inspire__top__items {
+    width: 50%;
+    position: relative;
+}
+
+.inspire__top__items img, .inspire__bottom__items img{
+    width: 100%;
+    height: 100%;
+}
+
+.inspire__top .inspire__top__items:first-child {
+    margin-right: 10px;
+}
+
+.inspire__bottom__items {
+    width: 33%;
+    margin-right: 10px;
+    position: relative;
+}
+
+.inspire__bottom__items:last-child{
+    margin-right: 0px;
+}
+
+.inspire__top__items--city, .inspire__bottom__items--city{
+    position: absolute;
+    bottom: 26px;
+    left: 30px;
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+}
+
+/*/INSPIRE*/
+
+/*PREFECTURE*/
+
+.prefecture {
+    margin-bottom: 130px;
+}
+
+.prefecture__top, 
+.prefecture__bottom {
+    display: flex;
+}
+.prefecture__top{
+    margin-bottom: 75px;
+}
+
+.prefecture__top__img,
+.prefecture__top__content,
+.prefecture__bottom__content,
+.prefecture__bottom__img {
+    width: 50%;
+}
+
+.prefecture__top__img,
+.prefecture__bottom__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prefecture__top__content,
+.prefecture__bottom__content{
+    display: flex;
+    flex-direction: column;
+}
+
+.prefecture__top__img:first-child,
+.prefecture__bottom__content:first-child{
+    margin-right: 75px;
+}
+
+.prefecture__top__img--img,
+.prefecture__bottom__img--img{
+    width: 100%;
+    height: 100%;
+}
+
+.prefecture__top__content--title,
+.prefecture__bottom__content--title{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 85px;
+}
+
+.prefecture__top__content--text,
+.prefecture__bottom__content--text{
+    margin-bottom: 60px;
+}
+
+.prefecture__top__content--link img,
+.prefecture__bottom__content--link img{
+    margin-left: 26px;
+}
+
+/*/PREFECTURE*/
+
+/*TODAY*/
+.today{
+    margin-bottom: 130px;
+}
+
+.today--title{
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+.today--title:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 253px;
+    background: #006DFE;
+}
+
+.today__cards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.today__card {
+    width: 390px;
+    height: 560px;
+    margin-bottom: 60px;
+ 
+}
+
+.today__card__img {
+    width: 390px;
+    height: 380px;
+    position: relative;
+}
+
+.today__card__img:hover .today__card__info{
+    display: block;
+}
+
+.today__card__img--img {
+    width: 100%;
+} 
+
+.today__card--text{
+    margin-top: 45px;
+    margin-bottom: 30px;
+}
+
+.today__card--link {
+    color: #fff;
+    font-size: 16px;
+    padding: 11px 20px; 
+    background: #1B7DFF; 
+}
+
+.today__card__info{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    height: 55px;
+    width: 100%;
+    background: #151824;
+    opacity: .6;
+    color: #fff;
+}
+
+.today__card__info__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding-left: 25px;
+}
+
+.today__card__info__box__status img{
+    padding-right: 15px;
+    width: 28px;
+}
+
+/*/TODAY*/
+
+/*VIDEO*/
+
+.video {
+    position: relative;
+}
+
+.video img {
+    width: 100%;
+    height: 100%;
+}
+
+.video__round {
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    content: '';
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.video__treangle {
+    width: 30px;
+    height: 30px;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 35px solid #000000;
+    cursor: pointer;
+}
+
+/*/VIDEO*/
+/*FOOTER*/
+
+.footer{
+    height: 370px;
+    background: #0E1D28;
+    transform: translateY(-231px);
+    
+}
+.footer__box{
+    display: flex;
+    justify-content: space-between;
+    max-width: 902px;
+    margin: 0 auto;
+    padding-top: 119px;
+}
+
+.footer__box__img {
+    width: 170px;
+    height: 64px;
+    margin-right: 356px;
+}
+
+.footer__box__navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer__box__navigation ul li{
+    margin-bottom: 3px;
+}
+
+.footer__box__navigation ul li a {
+    color: #fff;
+}
+
+/*/FOOTER*/
+
+
+/*ADAPTIVE*/
+
+@media screen and (max-width: 1200px) {
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .today__cards{
+        justify-content: space-around;
+    }
+    
+}
+
+@media screen and (max-width: 1130px) {
+    nav, 
+    .header__description,
+    .header__search,
+    .footer{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .header__description{
+        margin-top: 120px;
+    }
+    .header__search{
+        flex-direction: column;
+    }
+    .header__search--input{
+        max-width: 307px;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+    }
+    .header__search__link{
+        margin-top: 10px;
+    }
+    .header__search--link{
+        padding: 10px 20px;
+    }
+    .inspire__top__items--city,
+    .inspire__bottom__items--city{
+        font-size: 30px;
+    }
+    .footer__box__navigation ul{
+        padding-left: 20px;
+    }
+    .footer__box__img{
+        margin-right: 200px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .benefits__card{
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+   .benefits--title{
+    padding: 40px 0px 80px 0px;
+   }
+   .prefecture__top__content--title,
+   .prefecture__bottom__content--title{
+       margin-bottom: 30px;
+   } 
+   .today__cards{
+       flex-direction: column;
+       align-items: center;
+   }
+   .benefits,
+   .inspire,
+   .prefecture,
+   .today {
+       margin-bottom: 80px;
+   }
+   .footer__box__img{
+        margin-right: 100px;
+    }
+    .benefits--title{
+        font-size: 28px;
+    }
+
+    .inspire__head--title,
+    .today--title{
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    nav ul li {
+        margin-left: 30px;
+    }
+    .prefecture__top__content--title,
+    .prefecture__bottom__content--title{
+        font-size: 22px;
+    }
+    .benefits__card,
+    .prefecture__top__content,
+    .prefecture__bottom__content,
+    .inspire__head--link {
+        font-size: 14px;
+    }
+    .inspire__head--link-errow{
+        margin-left: 0px;
+    }
+
+    .prefecture__top__content--link img,
+    .prefecture__bottom__content--link img{
+        margin-left: 0px;
+    }
+    .prefecture__top__content p,
+    .prefecture__bottom__content p{
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .header__description h1 {
+        font-size: 34px;
+    }
+    .header__description--text,
+    .header__search--input label{
+        font-size: 14px;
+    }
+    .header__search{
+        margin-top: 90px;
+    }
+    .header__search--input{
+        width: 252px;
+    }
+    .header__search--link{
+        font-size: 18px;
+    }
+    .prefecture__top__img:first-child,
+    .prefecture__bottom__content:first-child{
+        margin-right: 0px;
+    }
+    .prefecture__top{
+        flex-direction: column;
+        align-items: center;
+    }
+    .prefecture__top__img,
+    .prefecture__bottom__img{
+        margin-bottom: 20px;
+    }
+    .prefecture__bottom{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .inspire__top__items--city,
+    .inspire__bottom__items--city{
+        font-size: 20px;
+    }
+    .footer__box{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+    }
+    .footer__box__img{
+        margin-bottom: 50px;
+        margin-right: 0px;
+    }
+    .footer__box__navigation ul {
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    nav{
+        flex-direction: column;
+    }
+    nav .logo{
+        margin-bottom: 20px;
+    }
+    nav ul li {
+        margin-left: 10px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+    .benefits--title{
+        padding-bottom: 40px;
+    }
+    .benefits__cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .benefits__card{
+        padding-right: 0px;
+        margin-bottom: 40px;
+        height: 200px;
+    }
+
+    .inspire__head{
+        flex-direction: column;
+    }
+    .inspire__head--title{
+        margin-bottom: 10px;
+    }
+    .inspire__top__items--city,
+    .inspire__bottom__items--city{
+        font-size: 16px;
+        bottom: 5px;
+        left: 5px;
+    }
+
+    .prefecture__top__img, .prefecture__top__content,
+    .prefecture__bottom__content, .prefecture__bottom__img{
+        width: 100%;
+    }
+    .today__card{
+        width: 280px;
+        height: 477px;
+    }
+    .today__card__img{
+        width: 280px;
+        height: 273px;
+    }
+    .video__round{
+        width: 40px;
+        height: 40px;
+    }
+    .video__treangle{
+        width: 10px;
+        height: 10px;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-left: 11px solid #000000;
+    }
+
+    .footer__box__navigation ul li a {
+        font-size: 14px;
+    }
+}
